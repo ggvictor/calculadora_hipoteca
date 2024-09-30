@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  
+  <title>Calculadora de Hipoteca</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="calculadora">
+      <div class="calculo">
+        <div class="row">
+        <h1>Calculadora de hipoteca</h1>
+        <button id="clear">Limpar tudo</button>
+      </div>
+        <h3>Valor da hipoteca</h3>
+        <div class="row">
+          <label for="valor" id="valor-label">R$</label>
+          <input type="text" name="valor" id="valor" placeholder="EX: 300,000">
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3>prazo da hipoteca</h3>
+            <input type="text" name="prazo" id="prazo" placeholder="EX: 25">
+          </div>
+          <label for="prazo" id="prazo-label">Anos</label>
+          <div class="column">
+            <h3>taxa de juro</h3>
+            <input type="text" name="juro" id="juro" placeholder="EX: 5.25">
+          </div>
+          <label for="juro" id="juro-label">%</label>
+        </div>
+        <h3>Tipo de hipoteca</h3>
+        
+        <div class="radio">
+          <input type="radio" name="escolha" id="Repayment" >
+          <label for="Repayment" id="Repayment-label">Reembolso</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="escolha" id="juros">
+          <label for="juros" id="juros-label">apenas juros</label>
+        </div>
+        <button id="button-calc"> <img src="assets/images/icon-calculator.svg" alt="calculadora">Calcular reembolsos</button>
+      </div>
+    </div>
+    <div class="resultados">
+      <img src="assets/images/illustration-empty.svg" alt="icone">
+      <h1>Resultados mostrados aqui</h1>
+      <p>Preencha o formulário e clique em “calcular reembolsos” para ver o que 
+        seriam seus pagamentos mensais.</p>
+    </div>
+  </div>
+
+  <!-- Mortgage Calculator
+  Clear All
+
+  Mortgage Amount
+
+  Mortgage Term
+
+  Interest Rate
+
+  Mortgage Type
+  Repayment
+  Interest Only
+
+  Calculate Repayments
+
+  Empty results start -->
+
+  <!-- Results shown here
+
+  Complete the form and click “calculate repayments” to see what 
+  your monthly repayments would be. -->
+
+  <!-- Empty results end -->
+
+  <!-- Completed results start -->
+<!-- 
+  Your results
+
+  Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.
+
+  Your monthly repayments
+
+  Total you'll repay over the term -->
+
+  <!-- Completed results end -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

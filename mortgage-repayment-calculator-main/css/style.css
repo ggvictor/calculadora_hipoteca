@@ -1,0 +1,131 @@
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:  hsl(202, 86%, 94%);
+}
+
+.row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+div.calculo{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 20px;
+    border-radius: 30px;
+    max-width: 720px;
+}
+.calculo h1{
+    color: hsl(202, 55%, 16%);
+    padding: 10px;
+    margin-right: 50px;
+}
+.calculo button#clear{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .4s;
+}
+.calculo button#clear:hover{
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+#valor-label{
+    margin-left: 35px;
+    border: 1px solid black;
+   padding: 9px 0;
+    border-right: none;
+}
+.calculo h3{
+    color: hsl(202, 55%, 16%);
+    padding: 10px;
+    margin-right: 50px;
+    opacity: .8;
+}
+.calculo input#valor{
+    width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    border-left: none;
+   
+}
+.calculo input#prazo, #juro{
+    padding: 10px 0;
+    margin-left: 15px;
+}
+#prazo-label, #juro-label{
+    margin-top: 42px;
+    border: 1px solid black;
+    border-left: none;
+    padding: 9px 0;
+}
+.radio{
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 32px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#Repayment-label, #juros-label{
+    cursor: pointer;
+}
+input[type= radio]{
+    cursor: pointer;
+    color: #D8DB2F;
+}
+#button-calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    background-color: #D8DB2F;
+    color: hsl(202, 55%, 16%);
+    padding: 8px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    transition: .4s;
+}
+#button-calc:hover{
+    opacity: .7;
+}
+.resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(202, 55%, 16%);
+    margin: 0 20px;
+    border-radius: 30px;
+    max-width: 720px;
+}
+.resultados img{
+    width: 300px;
+}
