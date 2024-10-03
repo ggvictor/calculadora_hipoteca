@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+  <script src="js/main.js" defer></script>
   
   <title>Calculadora de Hipoteca</title>
 
@@ -36,17 +38,17 @@
             <h3>taxa de juro</h3>
             <input type="text" name="juro" id="juro">
           </div>
-          <label for="juro" id="juro-label">%</label>
+          <label for="juro" id="juro-label" >%</label>
         </div>
         <h3>Tipo de hipoteca</h3>
         
-        <div class="radio">
+        <div class="radio" id="radio-Repayment">
           <input type="radio" name="escolha" id="Repayment" >
-          <label for="Repayment" id="Repayment-label">Reembolso</label>
+          <label for="Repayment" id="Repayment-label" class="label-radio">Reembolso</label>
         </div>
-        <div class="radio">
+        <div class="radio" id="radio-juros">
           <input type="radio" name="escolha" id="juros">
-          <label for="juros" id="juros-label">apenas juros</label>
+          <label for="juros" id="juros-label" class="label-radio">apenas juros</label>
         </div>
         <button id="button-calc"> <img src="assets/images/icon-calculator.svg" alt="calculadora">Calcular reembolsos</button>
       </div>
@@ -56,6 +58,19 @@
       <h1>Resultados mostrados aqui</h1>
       <p>Preencha o formulário e clique em “calcular reembolsos” para ver o que 
         seriam seus pagamentos mensais.</p>
+    </div>
+    <div class="resultado-completo">
+      <h1>Seus resultados</h1>
+      <p>Seus resultados são mostrados abaixo com base nas informações que você forneceu. 
+      Para ajustar os resultados, edite o formulário e clique novamente em “calcular reembolsos”.</p>
+      <div class="result-numbers">
+          <p>seus pagamentos mensais</p>
+          <span id="number"></span>
+
+          <p>total que você pagará ao longo do prazo</p>
+          <span id="number-white"></span>
+      </div>
+
     </div>
   </div>
 

@@ -54,6 +54,7 @@ div.calculo{
     flex-direction: column;
     margin-left: 20px;
 }
+
 #valor-label{
     margin-left: 35px;
     border: 2px solid hsl(200, 24%, 40%);
@@ -64,6 +65,12 @@ div.calculo{
     border-radius: 10px 0px 0px 10px;
     background-color: hsl(202, 86%, 94%);
     color: hsl(200, 24%, 40%);
+}
+.valor-label-focus{
+    border: 3px solid #D8DB2F !important;
+    border-right: none !important;
+    background-color: #D8DB2F !important;
+    font-weight: bolder !important;
 }
 .calculo h3{
     color: hsl(202, 55%, 16%);
@@ -119,6 +126,12 @@ div.calculo{
     padding-right: 10px;
     padding-left: 10px;
 }
+.custom-label{
+    border: 3px solid #D8DB2F !important;
+    border-left: none !important;
+    background-color: #D8DB2F !important;
+    font-weight: bolder !important;
+}
 .radio{
     cursor: pointer;
     width: 500px;
@@ -128,13 +141,51 @@ div.calculo{
     margin-bottom: 5px;
     border: 1px solid hsl(200, 24%, 40%) ;
     border-radius: 5px;
+    transition: .5s;
+}
+.radio:hover{
+    background-color: #D8DB2F;
+    color: hsl(202, 55%, 16%);
+    font-weight: bolder;
+    border: 1px solid #D8DB2F;
+    
 }
 #Repayment-label, #juros-label{
     cursor: pointer;
 }
 input[type= radio]{
+    display: none;
+   
+}
+.label-radio{
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 10px;
     cursor: pointer;
-    color: #D8DB2F;
+    user-select: none;
+    font-size: 18px;
+}
+.label-radio::before{
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #fff; 
+}
+input[type = "radio"]:checked + .label-radio::after{
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 7.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D8DB2F;
 }
 #button-calc{
     display: flex;
@@ -159,7 +210,7 @@ input[type= radio]{
     opacity: .7;
 }
 .resultados{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
