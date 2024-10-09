@@ -28,6 +28,7 @@ div.calculo{
     margin: 0 20px;
     border-radius: 30px 30px 0 30px;
     width: 820px;
+    height: 550px;
     position: absolute;
     top: 70px;
     left: 50px;
@@ -210,7 +211,7 @@ input[type = "radio"]:checked + .label-radio::after{
     opacity: .7;
 }
 .resultados{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -219,9 +220,11 @@ input[type = "radio"]:checked + .label-radio::after{
     margin: 0 20px;
     border-radius: 30px 30px 30px 80px;
     max-width: 720px;
+    height: 550px;
     position: absolute;
     top: 70px;
     left: 640px;
+    transition: 1s;
 }
 .resultados img{
     width: 300px;
@@ -232,4 +235,56 @@ input[type = "radio"]:checked + .label-radio::after{
 .resultados p{
     padding-bottom: 50px;
     text-align: center;
+}
+.resultado-completo{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(202, 55%, 16%);
+    color:white;
+    margin: 0 20px;
+    border-radius: 30px 30px 30px 80px;
+    width: 580px;
+    height: 550px;
+    position: absolute;
+    top: 70px;
+    left: 640px;
+    transition: 1s;
+}
+.resultado-completo h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.resultado-completo p{
+    margin-bottom: 50px;
+    opacity: .7;
+    width: 400px;
+}
+.result-numbers{
+    display: none;
+    flex-direction: column;
+    background-color: hsl(202, 58%, 10%);
+    margin-bottom: 95px;
+    padding:20px 0 20px 20px;
+    border-radius: 15px;
+    border-top: 6px solid #D8DB2F;
+}
+.result-numbers #number{
+    
+    color: #D8DB2F;
+    font-weight: bolder;
+    font-size: 45px;
+}
+.result-numbers hr{
+    border:1px solid grey;
+    margin: auto;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.result-numbers #number-white{
+    font-size: 20px;
+    padding-bottom:15px;
+    font-weight: bolder;
 }
