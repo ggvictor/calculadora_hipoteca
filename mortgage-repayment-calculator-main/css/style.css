@@ -1,4 +1,5 @@
-*{
+@media screen and (min-width:651px){
+    *{
     font-family: "Plus Jakarta Sans", sans-serif;
     padding: 0;
     margin: 0;
@@ -14,7 +15,7 @@ div.container{
     position: relative;
 }
 
-.row{
+.row,.row-div{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -287,4 +288,143 @@ input[type = "radio"]:checked + .label-radio::after{
     font-size: 20px;
     padding-bottom:15px;
     font-weight: bolder;
+}
+}
+@media screen and (max-width:650px){
+     *{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    div.container{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color:  hsl(202, 86%, 94%);
+        position: relative;
+    }
+    .row-div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    div.calculo{
+        padding-right: 50px;
+        padding-left:10px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: 0 20px;
+        border-radius: 30px 30px 0 30px;
+        width: 320px;
+        height: 350px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    .calculo button#clear{
+        border: none;
+        background: none;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: .4s;
+        font-size:0.7rem;
+        padding-bottom: 5px;
+    }
+    .calculo button#clear:hover{
+        font-size: 0.8rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    .calculo h1{
+        color: hsl(202, 55%, 16%);
+        font-size: 14px;
+        padding: 5px;
+        margin-right: 50px;
+    }
+    .column{
+         display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #valor-label{
+        margin-left: 15px;
+        font-size: 12px;
+        border: 2px solid hsl(200, 24%, 40%);
+        padding: 3px 0;
+        padding-right: 7px;
+        padding-left: 7px;
+        border-right: none;
+        border-radius: 10px 0px 0px 10px;
+        background-color: hsl(202, 86%, 94%);
+        color: hsl(200, 24%, 40%);
+    }
+    .valor-label-focus{
+        border: 3px solid #D8DB2F !important;
+        border-right: none !important;
+        background-color: #D8DB2F !important;
+        font-weight: bolder !important;
+    }
+    .calculo h3{
+        color: hsl(202, 55%, 16%);
+        font-size: 12px;
+        padding: 5px;
+        margin-right: 50px;
+        opacity: .8;
+    }
+    .calculo input#valor{
+        width: 110px;
+        padding-top: 1px;
+        padding-bottom: 3px;
+        padding-left: 0px;
+        margin-right: 0px;
+        font-weight: bold;
+        color: hsl(200, 26%, 54%);
+        font-family: "Plus Jakarta Sans", sans-serif;
+        border:2px solid  hsl(200, 24%, 40%);
+        border-left: none;
+        border-radius: 0px 10px 10px 0px;
+        transition: .2s;
+    }    
+    .calculo input#valor:focus{
+        outline: none;
+        border:3px solid #D8DB2F;
+        border-left:none;
+    }
+    .calculo input#prazo, #juro{
+        width: 110px;
+        padding: 3px 0;
+        margin-left: 0px;
+        border: 2px solid hsl(200, 24%, 40%);
+        border-right: none;
+        border-radius: 10px 0px 0px 10px;
+        font-weight: bold;
+        
+        color: hsl(200, 26%, 54%);
+        transition: .2s;
+    }
+    .calculo input#prazo:focus, #juro:focus{
+        outline: none;
+        border:3px solid #D8DB2F;
+        border-right:none;
+    }
+    #prazo-label, #juro-label{
+        margin-top: 10px;
+        border: 2px solid hsl(200, 24%, 40%) ;
+        border-left: none;
+        border-radius: 0px 10px 10px 0px;
+        padding: 3px 0;
+        background-color: hsl(202, 86%, 94%);
+        color: hsl(200, 24%, 40%);
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+    .resultado-completo{
+        display: none;
+    }
 }
