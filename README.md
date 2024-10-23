@@ -6,6 +6,5 @@ Uma calculadora de hipoteca que permite aos usuários calcular seus pagamentos m
 - Validação de entrada para permitir apenas números.
 - Exibe uma mensagem de alerta se nenhum tipo de hipoteca for selecionado.
 
-- ainda não esta responsiva...
 
 ![image](https://github.com/user-attachments/assets/e65fbea0-6997-4a16-a2ab-3bd68447b29d)
